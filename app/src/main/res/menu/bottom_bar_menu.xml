@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bt_profile"
+        android:icon="@drawable/ic_person_black"
+        android:title="@string/profile" />
+    <item
+        android:id="@+id/bt_schedule"
+        android:icon="@drawable/ic_calendar"
+        android:title="@string/calendar" />
+    <item
+        android:id="@+id/bt_students"
+        android:icon="@drawable/ic_students"
+        android:title="@string/students" />
+    <item
+        android:id="@+id/bt_surveys"
+        android:icon="@drawable/ic_chats"
+        android:title="@string/surveys" />
+
+</menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/schedule_nav_graph.xml"
+    app:startDestination="@id/scheduleFragment">
+
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.example.testcrm.presentation.profile.rootLesson.ScheduleFragment"
+        android:label="fragment_schedule"
+        tools:layout="@layout/fragment_schedule" >
+        <action
+            android:id="@+id/action_scheduleFragment_to_addLessonFragment"
+            app:destination="@id/addLessonFragment" />
+        <action
+            android:id="@+id/action_scheduleFragment_to_lessonStatisticFragment"
+            app:destination="@id/lessonStatisticFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addLessonFragment"
+        android:name="com.example.testcrm.presentation.profile.rootLesson.AddLessonFragment"
+        android:label="fragment_add_lesson"
+        tools:layout="@layout/fragment_add_lesson" >
+        <action
+            android:id="@+id/action_addLessonFragment_to_scheduleFragment2"
+            app:destination="@id/scheduleFragment" />
+        <argument
+            android:name="currentDate"
+            app:argType="string" />
+        <argument
+            android:name="lessonId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/lessonStatisticFragment"
+        android:name="com.example.testcrm.presentation.profile.rootLesson.LessonStatisticFragment"
+        android:label="fragment_lesson_statistic"
+        tools:layout="@layout/fragment_lesson_statistic" >
+        <action
+            android:id="@+id/action_lessonStatisticFragment_to_scheduleFragment"
+            app:destination="@id/scheduleFragment"/>
+    </fragment>
+</navigation>

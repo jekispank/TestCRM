@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2"
+    tools:context=".presentation.profile.rootLesson.AddLessonFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/rectangle_welcomescreen"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="266dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:background="@drawable/rectangle_enter_data"
+            android:elevation="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ic_person_blue" />
+
+            <TextView
+                android:id="@+id/tv_selected_student"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:paddingStart="8dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:text="Jekis Osipov" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/choose_student_spinner"
+                android:layout_width="30dp"
+                android:layout_height="58dp"
+                android:layout_gravity="end"
+                android:backgroundTint="@color/hint_blue" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/enter_subject"
+            android:layout_width="266dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:background="@drawable/rectangle_enter_data"
+            android:drawableStart="@drawable/ic_book"
+            android:drawablePadding="10dp"
+            android:elevation="5dp"
+            android:hint="@string/choose_subject"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColorHint="#AB0193FE" />
+
+        <TextView
+            android:id="@+id/enter_date"
+            android:layout_width="266dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:background="@drawable/rectangle_enter_data"
+            android:drawablePadding="10dp"
+            android:elevation="5dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/date"
+            android:textColor="@color/black"
+            android:textColorHint="#AB0193FE"
+            android:textSize="18sp"
+            app:drawableStartCompat="@drawable/ic_calendar_blue" />
+
+        <LinearLayout
+            android:layout_width="266dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:background="@drawable/rectangle_enter_data"
+            android:elevation="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ic_star" />
+
+            <TextView
+                android:id="@+id/tv_selected_level"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:paddingStart="8dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:text="intermediate" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/choose_level_spinner"
+                android:layout_width="30dp"
+                android:layout_height="58dp"
+                android:layout_gravity="end"
+                android:backgroundTint="@color/hint_blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="266dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:background="@drawable/rectangle_enter_data"
+            android:elevation="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ic_cup" />
+
+            <TextView
+                android:id="@+id/tv_selected_grade"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:paddingStart="8dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:text="5" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/choose_grade_spinner"
+                android:layout_width="30dp"
+                android:layout_height="58dp"
+                android:layout_gravity="end"
+                android:backgroundTint="@color/hint_blue" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="266dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:background="@drawable/rectangle_enter_data"
+            android:drawableStart="@drawable/ic_desc"
+            android:drawablePadding="10dp"
+            android:elevation="5dp"
+            android:hint="@string/description"
+            android:padding="10dp"
+            android:textColorHint="#AB0193FE" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_add_lesson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="25dp"
+        android:background="@drawable/rectangle_bt_welcomescreen"
+        android:fontFamily="@font/inter_medium"
+        android:text="@string/save"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.RootProfileFragment">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/root_container"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/second_nav_graph" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:background="@drawable/bottom_bar_shape"
+        android:visibility="visible"
+        app:itemBackground="@drawable/icon_background_block"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemIconTint="@drawable/icon_color_bottom_nav"
+        app:itemPaddingBottom="25dp"
+        app:itemPaddingTop="20dp"
+        app:itemTextColor="@color/black"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_bar_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

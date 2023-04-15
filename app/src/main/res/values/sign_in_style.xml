@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyTextStyle" parent="@style/TextAppearance.AppCompat.Body2">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/light_pink</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+    </style>
+</resources>

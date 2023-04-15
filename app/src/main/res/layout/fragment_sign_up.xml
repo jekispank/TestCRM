@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2"
+    tools:context=".presentation.SignUpFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/MyTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/sign_up_rectangle"
+        android:layout_width="360dp"
+        android:layout_height="580dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/rectangle_welcomescreen"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/enter_first_name"
+            android:layout_width="266dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rectangle_enter_data"
+            android:drawableStart="@drawable/ic_person_blue"
+            android:drawablePadding="10dp"
+            android:elevation="5dp"
+            android:hint="@string/first_name"
+            android:padding="10dp"
+            android:textColorHint="#AB0193FE" />
+
+        <EditText
+            android:id="@+id/enter_last_name"
+            android:layout_width="266dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangle_enter_data"
+            android:drawableStart="@drawable/ic_person_blue"
+            android:drawablePadding="10dp"
+            android:elevation="5dp"
+            android:hint="@string/last_name"
+            android:padding="10dp"
+            android:textColorHint="@color/hint_blue" />
+
+        <EditText
+            android:id="@+id/enter_patronymic"
+            android:layout_width="266dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangle_enter_data"
+            android:drawableStart="@drawable/ic_person_blue"
+            android:drawablePadding="10dp"
+            android:elevation="5dp"
+            android:hint="@string/patronymic"
+            android:padding="10dp"
+            android:textColorHint="@color/hint_blue" />
+
+        <EditText
+            android:id="@+id/enter_email"
+            android:layout_width="266dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangle_enter_data"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:elevation="5dp"
+            android:hint="@string/e_mail"
+            android:padding="10dp"
+            android:textColorHint="@color/hint_blue" />
+
+        <EditText
+            android:id="@+id/enter_telegram"
+            android:layout_width="266dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangle_enter_data"
+            android:drawableStart="@drawable/ic_telegram_blue"
+            android:drawablePadding="10dp"
+            android:elevation="5dp"
+            android:hint="@string/telegram"
+            android:padding="10dp"
+            android:textColorHint="@color/hint_blue" />
+
+        <EditText
+            android:id="@+id/enter_password"
+            android:layout_width="266dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangle_enter_data"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="10dp"
+            android:elevation="5dp"
+            android:hint="@string/password"
+            android:padding="10dp"
+            android:textColorHint="@color/hint_blue" />
+
+        <EditText
+            android:id="@+id/repeat_password"
+            android:layout_width="266dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangle_enter_data"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="10dp"
+            android:elevation="5dp"
+            android:hint="@string/repeat_password"
+            android:padding="10dp"
+            android:textColorHint="@color/hint_blue" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_sign_up"
+        android:layout_width="266dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle_bt_welcomescreen"
+        android:includeFontPadding="false"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:text="@string/sign_up"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_rectangle"
+        app:layout_constraintVertical_bias="0.2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

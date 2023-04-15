@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/second_nav_graph.xml"
+    app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.testcrm.presentation.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/rootStudentFragment"
+        android:name="com.example.testcrm.presentation.profile.rootStudent.RootStudentFragment"
+        android:label="fragment_root_student"
+        tools:layout="@layout/fragment_root_student" />
+    <fragment
+        android:id="@+id/rootScheduleFragment"
+        android:name="com.example.testcrm.presentation.profile.rootLesson.RootScheduleFragment"
+        android:label="fragment_root_schedule"
+        tools:layout="@layout/fragment_root_schedule" />
+    <fragment
+        android:id="@+id/rootSurveysFragment"
+        android:name="com.example.testcrm.presentation.profile.rootSurveys.RootSurveysFragment"
+        android:label="fragment_root_surveys"
+        tools:layout="@layout/fragment_root_surveys" />
+</navigation>
